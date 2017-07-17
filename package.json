@@ -1,0 +1,26 @@
+{
+  "name": "bakery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PiotrMieszczak/bakery.git"
+  },
+  "author": "Piotr Mieszczak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PiotrMieszczak/bakery/issues"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0"
+  },
+  "homepage": "https://github.com/PiotrMieszczak/bakery#readme"
+}
