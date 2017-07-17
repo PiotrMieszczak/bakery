@@ -1,13 +1,11 @@
-$grid-columns: 6;
-$grid-container-width: 1200px;
-$grid-column-width: $grid-container-width / $grid-columns;
-$breakpoint: (min-width: 640px);
+@import 'variables';
 
 .container{
 
-    width: 100vw;
+    width: 100%;
     max-width: $grid-container-width;
     margin: 0 auto;
+
     .row{
         &::before, &::after {
         content: "";
@@ -18,15 +16,21 @@ $breakpoint: (min-width: 640px);
         }
     }
 
-     [class*='col-'] { //mobile first; after 640px columns with will be adjust according to below function
+    [class*='col-']{ //mobile first; after 640px columns with will be adjust according to below function
         width: 100%;
+        min-height: 1px;
         float: none;
-        @media #{$breakpoint} { //fn for creating
-            @for $i from 1 through $grid-columns{
-                col-#{i}{
-                    width: $grid-column-width * $i;
-                }
-            }   
-        }
     }
+
+    @media #{$breakpoint} { 
+        [class*='col-']{
+            float: left;
+        }
+        //fn for creating
+        @for $i from 1 through $grid-columns{
+			.col-#{$i} {
+				width: $grid-column-width * $i;
+			}
+		}
+    }    
 }
