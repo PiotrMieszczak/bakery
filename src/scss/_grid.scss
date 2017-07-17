@@ -1,11 +1,11 @@
 $grid-columns: 6;
 $grid-container-width: 1200px;
-$grid-column-width: 100% / $grid-columns;
+$grid-column-width: $grid-container-width / $grid-columns;
 $breakpoint: (min-width: 640px);
 
 .container{
 
-    width: 100%;
+    width: 100vw;
     max-width: $grid-container-width;
     margin: 0 auto;
     .row{

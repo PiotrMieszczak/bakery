@@ -1,16 +1,40 @@
 
 header{
-    background-image: url('../images/header_background.jpg');
+   background-color: black;
 }
+
 nav{
     .menu {
+
         display: flex;
+        flex-wrap: wrap;
         align-content: center;
         justify-content: space-around;
         width: 100%;
         border: 1px solid red;
+
         li{
-            display: inline-block;
+            font-size: 3vh;
+            width: 95%;
+            text-align: center;
+            border: 1px solid gray;
+            padding: 1%;
+            text-transform: uppercase;
+            margin-bottom: 1%;
+
+            a{
+                color: white;
+                text-decoration: none;
+                margin-bottom: 1%;
+
+            }
+
+            @media (min-width: 640px){
+                margin-bottom: 0;
+            }
+        }   
+        @media (min-width: 640px){
+                flex-wrap: nowrap;
         }
     }
 

@@ -1,0 +1,12 @@
+.slider_wraper{
+    border: 1px solid red;
+    height: 50vh;
+    position: relative;
+    display: flex;
+
+    .circle{
+        position: absolute;
+        align-self: flex-end;
+        border: 1px solid white;
+    }
+}
