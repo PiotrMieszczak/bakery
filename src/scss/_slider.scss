@@ -1,12 +1,31 @@
 .slider_wraper{
     border: 1px solid red;
-    height: 50vh;
+    height: 400px;
     position: relative;
     display: flex;
+    justify-content: center;
 
-    .circle{
+    .slider_text{
         position: absolute;
-        align-self: flex-end;
-        border: 1px solid white;
+        align-self: center;
+        color: white;
     }
+    li{
+        width: 100%;
+    }
+    .sliders_btn{
+
+        display: flex;
+        z-index: 100;
+
+            .circle{
+                align-self: flex-end;
+                border: 1px solid white;
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                margin-right: 5px;
+            }
+    }
+    
 }
