@@ -21,34 +21,49 @@ nav.menu {
     flex-wrap: wrap;
     align-content: center;
     width: 100%;
-    border: 1px solid red;
-
-     @media #{$breakpoint} {
-        flex-wrap: nowrap;
-    } 
+   
     ul{
         width: 95%;
         margin: 0 auto;
-        
+        @media #{$breakpoint} {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+        }  
+
         li {
         font-size: 16px;
         text-align: center;
-        border: 1px solid gray;
+        border: 2px solid transparent;
+        border-top-color: pink;
+        border-bottom-color: pink;
+
         padding: 1%;
         text-transform: uppercase;
         margin-bottom: 1%;
 
-        a { 
-            color: black;
-            text-decoration: none;
-            margin-bottom: 1%;
             @media #{$breakpoint} {
-                margin-bottom: 0;
                 font-size: 18px;
+                width: calc(#{$grid-container-width} / 6);
+                border-color: transparent;
+                border-left-color: pink;
+                border-right-color: pink;
+
+                &:first-of-type{
+                    border-left-width: 4px;
+                }
+                &:last-of-type{
+                    border-right-width: 4px;
+                }
+            }
+
+            a{ 
+                color: black;
+                text-decoration: none;
+                margin-bottom: 1%;
+
             }
         }
-            
-        }
-       
     }
+
 }
