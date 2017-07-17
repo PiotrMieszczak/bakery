@@ -2,31 +2,13 @@
 
 .slider_wraper{
     border: 1px solid red;
-   
-    display: flex;
-    justify-content: center;
     overflow: hidden;
 
     .slider{
-        height: 400px;
-
+        display:flex;
         li{
-            width: 100%;  
+            width: 100%;
+            float: left;
         }
     }
-    .sliders_btn{
-
-        display: flex;
-        z-index: 100;
-
-            .circle{
-                align-self: flex-end;
-                border: 1px solid white;
-                width: 10px;
-                height: 10px;
-                border-radius: 100%;
-                margin-right: 5px;
-            }
-    }
-    
 }
