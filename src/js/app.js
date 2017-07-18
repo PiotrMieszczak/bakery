@@ -39,7 +39,7 @@ $(document).ready(function(){
 
     var desktop = window.matchMedia("(min-width:640px)");
 
-    desktop.addListener( function (m){
+    desktop.addListener( function (m){ //at min 640px menu will hide.
         if(m.matches){
             menu.show();
         }else{
