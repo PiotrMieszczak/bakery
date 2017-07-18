@@ -11,14 +11,14 @@
         
         div{
             width: 25%; 
-            height:25vh;
+            height:30vh;
             float: left;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
 
             @media #{$breakpoint}{
-                height:40vh;
+                height: 400px;
             }
             &.sliderImg1{
                 background-image: url('../images/slider1.jpg')
