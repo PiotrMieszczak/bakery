@@ -6,7 +6,8 @@ $(document).ready(function(){
     var currentSlide = 1;
 
     var firstLi = slider.children().eq(0);
-    var cloneFirstLi = firstLi.clone();
+    var cloneFirstLi = firstLi.clone(); //need to clone first element and add it to the end of ul
+    //if not, the change  at slider.css('margin-left',0) third pic would be instantly "replaced" by first - it would look bad
     slider.append(cloneFirstLi);
     var intervalId;
 
