@@ -3,11 +3,14 @@
 .slider_wraper{
     border: 1px solid red;
     overflow: hidden;
+    width: 100%;
 
     .slider{
-        display:flex;
+        display:block;
+        width: 300%;
+
         li{
-            width: 100%;
+            width: 33.3%; 
             float: left;
         }
     }
