@@ -8,9 +8,27 @@
         display:block;
         width: 400%;
 
-        li{
+        
+        div{
             width: 25%; 
+            height:25vh;
             float: left;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            @media #{$breakpoint}{
+                height:40vh;
+            }
+            &.sliderImg1{
+                background-image: url('../images/slider1.jpg')
+            }
+            &.sliderImg2{
+                background-image: url('../images/slider2.jpg')
+            }
+            &.sliderImg3{
+                background-image: url('../images/slider3.jpg')
+            }
         }
     }
 }

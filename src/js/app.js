@@ -26,7 +26,7 @@ $(document).ready(function(){
         clearInterval(intervalId);
     }
 
-    startSlider();
+   startSlider();
 
 //Mobile menu
     var mobileDiv = $('.mobile');
