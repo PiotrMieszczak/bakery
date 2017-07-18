@@ -34,7 +34,7 @@ $(document).ready(function(){
     var menu= $('.menu');
 
     mobileDiv.click(function(){
-        menu.toggle().slideDown(); //hide/show meny on click
+        menu.slideToggle(); //hide/show meny on click
     })
 
     var desktop = window.matchMedia("(min-width:640px)");
