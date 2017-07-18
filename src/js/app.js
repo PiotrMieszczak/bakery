@@ -1,17 +1,19 @@
 $(document).ready(function(){
 
     var slider = $('.slider')
-    var animationSpeed = 1000; //ms
-    var counter = 1;
-    console.log(slider);
+    var animationSpeed = 2000; //ms
+    var currentSlide = 1;
+    console.log();
 
-    // var intervalId = setInterval(function(){
-    //     counter++;
-        
-    //     slider.animate({'margin-left': '-=100%'},animationSpeed);
-       
-
-    // }, 1000)
+    var intervalId = setInterval(function(){
+        slider.animate({'margin-left': '-=100%'},animationSpeed, function(){
+            currentSlide++;
+            if(currentSlide == slider.children().length){
+                slider.css('margin-left',0);
+                 currentSlide = 1;
+            }
+        });
+    }, 4000)
     
 
 
