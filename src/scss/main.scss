@@ -3,7 +3,11 @@
 @import './mobileMenu';
 @import './navigation';
 @import './slider';
- 
+@import './aboutUs';
+
+ *{
+    font-family: 'Source Code Pro', monospace;
+ }
 .sticky{
     position: fidex;
 }

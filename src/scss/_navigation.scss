@@ -4,6 +4,7 @@ header {
     .logo {
         display: flex;
         justify-content: center;
+        
         img {
             width: 200px;
             height: 200px;
@@ -25,7 +26,9 @@ nav.menu {
          }
     ul{
         width: 100%;
-                    
+            @media #{$breakpoint} {
+            display: flex;
+         }       
         li {
         font-size: 16px;
         text-align: center;
@@ -39,7 +42,7 @@ nav.menu {
 
             @media #{$breakpoint} {
                 font-size: 18px;
-                width: 16.333%;
+                width: 16.66%;
                 border-color: transparent;
                 border-left-color: pink;
                 border-right-color: pink;

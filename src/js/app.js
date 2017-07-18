@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 //SLIDER
     var slider = $('.slider')
-    var animationSpeed = 2000; //ms
+    var animationSpeed = 3000; //ms
     var currentSlide = 1;
 
     var firstLi = slider.children().eq(0);
@@ -19,7 +19,7 @@ $(document).ready(function(){
                  currentSlide = 1;
                 }
             });
-        }, 4000)
+        }, 5000)
     }
 
     function stopSlider(){
