@@ -34,7 +34,7 @@ $(document).ready(function(){
     var menu= $('.menu');
 
     mobileDiv.click(function(){
-        menu.toggle(); //hide/show meny on click
+        menu.toggle().slideDown(); //hide/show meny on click
     })
 
     var desktop = window.matchMedia("(min-width:640px)");
@@ -46,6 +46,8 @@ $(document).ready(function(){
             menu.hide();
         }
     })
+
+//Sticky menu
 
 
 
