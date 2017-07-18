@@ -19,17 +19,18 @@ header {
 nav.menu {
 
     width: 100%;
-   
+    display: none;
+         @media #{$breakpoint} {
+             display: block;
+         }
     ul{
         width: 100%;
-        margin: 0 auto;
-
+                    
         li {
         font-size: 16px;
         text-align: center;
         
-        border: 4px solid transparent;
-        border-top-color: pink;
+        border: 2px solid transparent;
         border-bottom-color: pink;
 
         padding: 1%;
@@ -40,7 +41,6 @@ nav.menu {
                 font-size: 18px;
                 width: 16.333%;
                 border-color: transparent;
-                
                 border-left-color: pink;
                 border-right-color: pink;
                 display: inline-block;

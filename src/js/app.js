@@ -32,16 +32,13 @@ $(document).ready(function(){
     var mobileDiv = $('.mobile');
     var menu= $('.menu');
 
-    var mobile = window.matchMedia("(min-width:640px)");
-
-    menu.hide();
-
     mobileDiv.click(function(){
-        console.log('test');
         menu.toggle(); //hide/show meny on click
     })
 
-    mobile.addListener( function (m){
+    var desktop = window.matchMedia("(min-width:640px)");
+
+    desktop.addListener( function (m){
         if(m.matches){
             menu.show();
         }else{
