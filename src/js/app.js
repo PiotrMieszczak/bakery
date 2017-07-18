@@ -29,5 +29,26 @@ $(document).ready(function(){
     startSlider();
 
 //Mobile menu
-    
+    var mobileDiv = $('.mobile');
+    var menu= $('.menu');
+
+    var mobile = window.matchMedia("(min-width:640px)");
+
+    menu.hide();
+
+    mobileDiv.click(function(){
+        console.log('test');
+        menu.toggle(); //hide/show meny on click
+    })
+
+    mobile.addListener( function (m){
+        if(m.matches){
+            menu.show();
+        }else{
+            menu.hide();
+        }
+    })
+
+
+
 })
