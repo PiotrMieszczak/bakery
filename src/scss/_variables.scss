@@ -1,4 +1,4 @@
 $grid-columns: 8;
 $grid-container-width: 1200px;
-$grid-column-width: $grid-container-width / $grid-columns;
+$grid-column-width: 100% / $grid-columns;
 $breakpoint: (min-width: 640px);
