@@ -1,21 +1,48 @@
 @import 'variables';
 
-.slider_wraper{
+.sliderWraper{
     overflow: hidden;
     width: 100%;
+    
 
     .slider{
         display:block;
         width: 400%;
-
+        
         
         div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+
+            
+
             width: 25%; 
             height:30vh;
             float: left;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+
+             &.sliderText{
+                height: 100px;
+                width: 200px;
+                color: white;
+                font-size: 18px;
+
+                align-self: center;
+                text-align: center;
+
+                background-color: rgba(0, 0,0, 0.6);
+
+                @media #{$breakpoint}{
+                    height: 200px;
+                    width: 400px;
+                    font-size:26px;
+                    padding: 1%;
+                }
+            }
 
             @media #{$breakpoint}{
                 height: 400px;
@@ -32,3 +59,6 @@
         }
     }
 }
+
+
+   
