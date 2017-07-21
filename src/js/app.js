@@ -49,6 +49,18 @@ $(document).ready(function(){
 
 //Sticky menu
 
+var menuStartTopPosition = menu.position().top;
 
+$(window).scroll(function(){
+    var windowScrollPosition = $(window).scrollTop();
+    console.log(windowScrollPosition);
+    console.log(menuStartTopPosition);
+    if( windowScrollPosition >= menuStartTopPosition){
+       menu.addClass('navigationFixed'); //fixed menu at 0,0 position on scroll
+   
+    }else{
+        menu.removeClass('navigationFixed');
+    }
+})
 
 })

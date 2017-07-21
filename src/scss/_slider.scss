@@ -16,10 +16,9 @@
             align-items: center;
             text-transform: uppercase;
 
-            
-
             width: 25%; 
             height:30vh;
+
             float: left;
             background-repeat: no-repeat;
             background-position: center;
@@ -39,13 +38,14 @@
                 @media #{$breakpoint}{
                     height: 200px;
                     width: 400px;
+
                     font-size:26px;
                     padding: 1%;
                 }
             }
 
             @media #{$breakpoint}{
-                height: 400px;
+                height: 70vh;
             }
             &.sliderImg1{
                 background-image: url('../images/slider1.jpg')

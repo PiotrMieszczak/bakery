@@ -4,7 +4,7 @@ header {
     .logo {
         display: flex;
         justify-content: center;
-        
+    
         img {
             width: 200px;
             height: 200px;
@@ -42,7 +42,7 @@ nav.menu {
 
             @media #{$breakpoint} {
                 font-size: 18px;
-                width: 16.66%;
+                width: 20%;
                 border-color: transparent;
                 border-left-color: pink;
                 border-right-color: pink;
@@ -60,6 +60,7 @@ nav.menu {
                 color: black;
                 text-decoration: none;
                 margin-bottom: 1%;
+                letter-spacing: 2px;
 
             }
         }

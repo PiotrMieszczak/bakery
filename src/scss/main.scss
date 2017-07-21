@@ -8,6 +8,14 @@
  *{
     font-family: 'Source Code Pro', monospace;
  }
-.sticky{
-    position: fidex;
+.navigationFixed{
+    width: 100vw;
+    position: fixed;
+    background-color: white;
+    top:0;
+    left:0;
+    a{
+        font-size: 20px;
+       
+    }
 }
