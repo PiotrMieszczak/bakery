@@ -30,10 +30,10 @@ $(document).ready(function(){
    startSlider();
 
 //Mobile menu
-    var mobileDiv = $('.mobile');
+    var mobileMenu = $('.mobile');
     var menu= $('.menu');
 
-    mobileDiv.click(function(){
+    mobileMenu.click(function(){
         menu.slideToggle(); //hide/show meny on click
     })
 
@@ -48,19 +48,45 @@ $(document).ready(function(){
     })
 
 //Sticky menu
-
+var logo = $('.logo');
+// logo.hide();
 var menuStartTopPosition = menu.position().top;
+var mobileMenuStartPosition = mobileMenu.position().top;
 
+
+function stickMeny(window, menu){
+    
+}
 $(window).scroll(function(){
-    var windowScrollPosition = $(window).scrollTop();
-    console.log(windowScrollPosition);
-    console.log(menuStartTopPosition);
-    if( windowScrollPosition >= menuStartTopPosition){
-       menu.addClass('navigationFixed'); //fixed menu at 0,0 position on scroll
-   
-    }else{
-        menu.removeClass('navigationFixed');
-    }
+        var mobileDisplayStyle = mobileMenu.css('display');
+        var windowScrollPosition = $(window).scrollTop();
+        var header = $('header');
+        
+
+        if (mobileDisplayStyle==='none'){
+            if( windowScrollPosition > menuStartTopPosition){
+                logo.hide();
+                header.addClass('navigationFixed'); //fixed menu at 0,0 position on scroll
+            }else{
+                logo.slideDown(600)
+                header.removeClass('navigationFixed');
+            }
+        }
+
+        if (mobileDisplayStyle==='flex'){
+
+            if( windowScrollPosition > mobileMenuStartPosition){
+                console.log('window ',windowScrollPosition,'menu ',mobileMenuStartPosition);
+                logo.slideUp(600);
+                header.addClass('navigationFixed');
+            }else{
+                console.log('window ',windowScrollPosition,'menu ',mobileMenuStartPosition);
+                 logo.slideDown(600);
+                header.removeClass('navigationFixed');
+            }
+        }
+
+
 })
 
 })
