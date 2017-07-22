@@ -21,8 +21,11 @@
 
 section{
         border-top: 2px dashed pink;
-
+        padding-top: 3%;
+        margin-top: 1%;
+        
         &:first-of-type{
             border: none;
+            padding: 0;
         }
 }
