@@ -1,3 +1,23 @@
+@import './variables';
+
 #contact{
     background: white;
+    iframe{
+        width:100%;
+    }
+    .social{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding:5%;
+      
+
+        i{
+            font-size: 25vh;
+            
+            @media #{$breakpoint}{
+            font-size: 20vh;
+            }
+        }
+    }
 }
