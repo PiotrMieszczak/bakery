@@ -5,10 +5,15 @@
 @import './slider';
 @import './aboutUs';
 @import './gallery';
+@import './orders';
 
  *{
     font-family: 'Source Code Pro', monospace;
  }
+body{
+    background-image: url('../images/bg.jpeg');
+    background-attachment: fixed;
+}
 .navigationFixed{
     width: 100vw;
     position: fixed;
@@ -17,15 +22,4 @@
     a{
         font-size: 20px;
     }
-}
-
-section{
-        border-top: 2px dashed pink;
-        padding-top: 3%;
-        margin-top: 1%;
-        
-        &:first-of-type{
-            border: none;
-            padding: 0;
-        }
 }

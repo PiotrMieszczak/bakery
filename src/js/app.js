@@ -57,11 +57,10 @@ var mobileDisplayStyle = mobileMenu.css('display');
 
 function stickyMenu(menuPosition){
             var windowPosition = $(window).scrollTop();
-            console.log('window: ',windowPosition, 'menu: ',menuPosition  )
             if( windowPosition > menuPosition){
                 logo.hide();
                 header.addClass('navigationFixed'); 
-            }else{
+            }else{ 
                 logo.slideDown();
                 header.removeClass('navigationFixed');
             }

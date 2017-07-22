@@ -31,10 +31,7 @@
                             <a href="#gallery">galeria</a>
                         </li>
                         <li>
-                            <a href="#orders">zamowienia</a>
-                        </li>
-                        <li>
-                            <a href="#priceList">cennik</a>
+                            <a href="#orders">zamówienia</a>
                         </li>
                         <li>
                             <a href="#contact">kontakt</a>
@@ -45,32 +42,34 @@
         </section>
     </header>
 
-    <section id="mainSlider" class="container">
-        <div class="row">
-            <div class="sliderWraper">
-                <ul class="slider">
-                    <li>
-                        <div class="sliderImg1">
-                            <div class="sliderText">
-                                <span>Lorem ipsum dolor sit amet!</span>
+    <section id="mainSlider">
+        <div class="container">
+            <div class="row">
+                <div class="sliderWraper">
+                    <ul class="slider">
+                        <li>
+                            <div class="sliderImg1">
+                                <div class="sliderText">
+                                    <span>Lorem ipsum dolor sit amet!</span>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="sliderImg2">
-                            <div class="sliderText">
-                                <span>Lorem ipsum dolor sit amet!</span>
+                        </li>
+                        <li>
+                            <div class="sliderImg2">
+                                <div class="sliderText">
+                                    <span>Lorem ipsum dolor sit amet!</span>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="sliderImg3">
-                            <div class="sliderText">
-                                <span>Lorem ipsum dolor sit amet!</span>
+                        </li>
+                        <li>
+                            <div class="sliderImg3">
+                                <div class="sliderText">
+                                    <span>Lorem ipsum dolor sit amet!</span>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>   
     </section>
@@ -108,13 +107,41 @@
                     <img src="images/gallery05.jpg" alt="gallery05_pic">
                 </div>
                 <div class="col-3">
-                    <img src="images/gallery05.jpg" alt="gallery06_pic">
-                    <img src="images/gallery06.jpg" alt="gallery07_pic">
+                    <img src="images/gallery06.jpg" alt="gallery06_pic">
+                    <img src="images/gallery07.jpg" alt="gallery07_pic">
                 </div>
             </div>
         </div>
     </section>
+    <section id="orders">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 orders_desc">
+                    <h2>torty na zamówienie</h1>
+                            <p><!--
+                                -->Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Earum unde, odit libero itaque! At atque earum iusto corporis. 
+                                <!--
+                            --></p>
+                </div>
 
+                <div class="col-4 orders_form">
+                        <form>
+                            <label for="name">Imię</label>
+                            <input type="text" name="name" placeholder="Imię">
+                            <label for="surname">Nazwisko</label>
+                            <input type="text" name="surname" placeholder="Nazwisko">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="Email">
+                            <textarea rows="10" cols="10" placeholder="Uwagi"></textarea>
+                            <input type="submit" value="Wyślij">
+                        </form>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
     <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

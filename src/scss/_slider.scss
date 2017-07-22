@@ -1,5 +1,8 @@
 @import 'variables';
 
+#mainSlider{
+    background: white;
+}
 .sliderWraper{
     overflow: hidden;
     width: 100%;
@@ -22,7 +25,7 @@
             float: left;
             background-repeat: no-repeat;
             background-position: center;
-            // background-attachment: fixed;
+            //background-attachment: fixed;
 
             @media #{$breakpoint}{
                 max-height:400px;

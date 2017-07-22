@@ -1,7 +1,6 @@
 @import 'variables';
 header {
     background-color: white;
-    margin-bottom: 10px;
     .logo {
         display: flex;
         justify-content: center;
@@ -11,8 +10,8 @@ header {
             height: 100px;
             @media #{$breakpoint} {
                 flex-wrap: nowrap;
-                width: 300px;
-                height: 200px;
+                width: 350px;
+                height: 220px;
             }
         }
     }
@@ -43,7 +42,7 @@ nav.menu {
 
             @media #{$breakpoint} {
                 font-size: 18px;
-                width: 20%;
+                width: 25%;
                 border-color: transparent;
                 border-left-color: pink;
                 border-right-color: pink;
@@ -52,7 +51,7 @@ nav.menu {
                 &:nth-of-type(2n){
                     border-color: transparent;
                 }
-                &:nth-of-type(6){
+                &:nth-of-type(4){
                     border-right-color: pink;
                 }
             }
