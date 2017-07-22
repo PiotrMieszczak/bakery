@@ -75,4 +75,11 @@ $(window).scroll(function(){
 
     })
 
+$('a').click(function(){
+    event.preventDefault();
+    console.log(this);
+    $('html, body').animate({
+            scrollTop: $( $(this).attr('href') ).offset().top-100
+        }, 800);
+    });
 })

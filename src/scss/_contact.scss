@@ -10,14 +10,17 @@
         flex-wrap: wrap;
         justify-content: space-around;
         padding:5%;
-      
+        @media #{$breakpoint}{
+            padding: 3%;
+        }
 
         i{
-            font-size: 25vh;
-            
+            font-size: 25vh; 
             @media #{$breakpoint}{
-            font-size: 20vh;
+            font-size: 30vh;
             }
         }
+
+
     }
 }
