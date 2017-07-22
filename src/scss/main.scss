@@ -4,6 +4,7 @@
 @import './navigation';
 @import './slider';
 @import './aboutUs';
+@import './gallery';
 
  *{
     font-family: 'Source Code Pro', monospace;
@@ -20,6 +21,7 @@
 
 section{
         border-top: 2px dashed pink;
+
         &:first-of-type{
             border: none;
         }
