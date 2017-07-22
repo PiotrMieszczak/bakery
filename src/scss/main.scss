@@ -12,9 +12,15 @@
     width: 100vw;
     position: fixed;
     background-color: white;
-    top:0;
-    left:0;
+
     a{
         font-size: 20px;
     }
+}
+
+section{
+        border-top: 2px dashed pink;
+        &:first-of-type{
+            border: none;
+        }
 }

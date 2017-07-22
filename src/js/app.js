@@ -57,12 +57,12 @@ var mobileDisplayStyle = mobileMenu.css('display');
 
 function stickyMenu(menuPosition){
             var windowPosition = $(window).scrollTop();
-
+            console.log('window: ',windowPosition, 'menu: ',menuPosition  )
             if( windowPosition > menuPosition){
-                logo.slideUp(400);
+                logo.hide();
                 header.addClass('navigationFixed'); 
             }else{
-                logo.slideDown(600)
+                logo.slideDown();
                 header.removeClass('navigationFixed');
             }
 }

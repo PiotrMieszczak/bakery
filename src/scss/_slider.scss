@@ -17,12 +17,13 @@
             text-transform: uppercase;
 
             width: 25%; 
-            height:50vh;
+            height:40vh;
 
             float: left;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            background-attachment: fixed;
 
              &.sliderText{
                 height: 100px;
@@ -32,8 +33,6 @@
 
                 align-self: center;
                 text-align: center;
-
-                background-color: rgba(0, 0,0, 0.6);
 
                 @media #{$breakpoint}{
                     height: 200px;
@@ -45,7 +44,7 @@
             }
 
             @media #{$breakpoint}{
-                height: 70vh;
+                height: 80vh;
             }
             &.sliderImg1{
                 background-image: url('../images/slider1.jpg')
