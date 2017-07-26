@@ -75,11 +75,12 @@ $(window).scroll(function(){
 
     })
 
-$('a').click(function(){
-    event.preventDefault();
-    console.log(this);
-    $('html, body').animate({
-            scrollTop: $( $(this).attr('href') ).offset().top-100
-        }, 800);
-    });
-})
+// $('a').click(function(){ //not working with sticky menu
+//     event.preventDefault();
+//     let targetSection = $(this).attr('href');
+
+//     $('html, body').animate({
+//             scrollTop: $( targetSection ).offset().top
+//         }, 800);
+//     });
+ })
